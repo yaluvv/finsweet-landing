@@ -48,6 +48,9 @@ body {
   color: var(--main-color);
   overflow-x: hidden;
 }
+.visibility-hidden {
+  visibility: hidden;
+}
 
 .container {
   max-width: var(--container-width);
@@ -143,7 +146,6 @@ body {
   opacity: 0.6;
 }
 .contact-us__main-text {
-  font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
@@ -362,7 +364,6 @@ body {
   background: #f2f2f2;
 }
 .services__sub-title {
-  font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   text-align: center;
@@ -398,7 +399,6 @@ body {
   background: var(--white-color);
 }
 .services__item-name {
-  font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   text-align: center;
@@ -436,6 +436,65 @@ body {
 }
 
 /* services section end  */
+
+/* stats section start */
+.stats {
+  padding: 48px 0;
+}
+.stats__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats__block {
+  display: flex;
+  flex-direction: column;
+}
+.stats__block:not(:last-child) {
+  margin-right: 20px;
+}
+.stats__numbers {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  letter-spacing: -0.03em;
+  color: #661ce7;
+  align-self: flex-start;
+}
+.stats__desc {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: var(--main-color);
+  opacity: 0.7;
+}
+/* stats section end */
+
+/* brands section start */
+.brands {
+  padding: 128px 0px 82px 0;
+  background-color: #e2e6e9;
+}
+
+.brands__title {
+  font-size: 58px;
+  line-height: 76px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+.brands__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands__items:not(:last-child) {
+  margin-bottom: 36px;
+}
+.brands__img:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* brands section end */
 
 /* contact section start */
 .contact {
