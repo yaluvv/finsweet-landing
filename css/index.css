@@ -68,10 +68,21 @@ body {
   border: none;
   color: var(--white-color);
   cursor: pointer;
+  position: relative;
 }
 .btn:hover {
   opacity: 0.6;
 }
+.btn:active {
+  top: 1px;
+}
+.logo {
+  transition: all 0.3s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
 .btn--dark {
   background: var(--main-color);
 }
@@ -108,6 +119,9 @@ body {
 .nav__link {
   font-size: 16px;
   line-height: 28px;
+}
+.nav__link:hover {
+  opacity: 0.6;
 }
 .sub-item {
   background: var(--white-color);
@@ -292,6 +306,7 @@ body {
   color: var(--main-color);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .header__play-icon {
   margin-right: 8px;
@@ -590,8 +605,75 @@ body {
 .brands__img:not(:last-child) {
   margin-right: 10px;
 }
+.brands__img {
+  transition: all 0.3s;
+}
+.brands__img:hover {
+  transform: scale(1.2);
+}
 
 /* brands section end */
+
+/* blog section start */
+.blog {
+  padding: 131px 0 136px 0;
+}
+.blog__head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog__posts {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.blog__title {
+  text-align: left;
+  font-size: 58px;
+  line-height: 76px;
+  margin-bottom: 47px;
+}
+.blog__filter-items {
+  display: flex;
+  margin-bottom: 46px;
+}
+.blog__filter-item:not(:last-child) {
+  margin-right: 30px;
+}
+.blog__filter-link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+}
+.blog__filter-link:hover {
+  opacity: 0.6;
+}
+.blog__post-date {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #939191;
+}
+.blog__post-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+}
+.blog__post-text {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
+
+/* blog section end */
 
 /* reviews section start */
 .reviews {
@@ -892,6 +974,7 @@ body {
   margin-bottom: 64px;
 }
 .find__sub-text {
+  display: inline-block;
   font-size: 18px;
   line-height: 175%;
   opacity: 0.6;
