@@ -383,7 +383,6 @@ body {
   line-height: 36px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: var(--main-color);
   margin-bottom: 6px;
 }
 .services__info {
@@ -397,7 +396,6 @@ body {
   font-size: 58px;
   line-height: 76px;
   text-align: center;
-  color: var(--main-color);
 }
 .services__items {
   display: grid;
@@ -412,13 +410,25 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--white-color);
+  transition: all 0.3s;
+}
+.services__item:hover {
+  background: var(--second-color);
+}
+.services__item:hover .services__item-name {
+  transition: all 0.3s;
+  color: var(--white-color);
+}
+.services__item:hover path,
+.services__item:hover mask {
+  fill: var(--white-color);
+  transition: all 0.3s;
 }
 .services__item-name {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: var(--main-color);
 }
 .services__item-img {
   margin-bottom: 16px;
@@ -474,7 +484,6 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
-  color: var(--main-color);
   opacity: 0.6;
   margin-bottom: 32px;
 }
@@ -535,7 +544,6 @@ body {
   font-size: 32px;
   line-height: 48px;
   letter-spacing: -0.03em;
-  color: var(--main-color);
   margin-bottom: 8px;
 }
 .process__item-text {
@@ -543,7 +551,6 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 175%;
-  color: var(--main-color);
   opacity: 0.6;
 }
 
@@ -577,7 +584,6 @@ body {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
-  color: var(--main-color);
   opacity: 0.7;
 }
 /* stats section end */
@@ -690,7 +696,6 @@ body {
   font-size: 58px;
   line-height: 76px;
   text-align: center;
-  color: var(--main-color);
   margin-bottom: 76px;
 }
 .reviews__slider {
@@ -720,7 +725,6 @@ body {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
-  color: var(--main-color);
 }
 .reviews__user-city {
   font-size: 16px;
@@ -804,7 +808,6 @@ body {
   font-size: 58px;
   line-height: 76px;
   text-align: center;
-  color: var(--main-color);
   margin-bottom: 86px;
 }
 .que__acc-items {
@@ -823,7 +826,6 @@ body {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
-  color: var(--main-color);
   position: relative;
 }
 .que__acc-item-head {
@@ -890,7 +892,6 @@ body {
   font-size: 64px;
   line-height: 84px;
   letter-spacing: -0.03em;
-  color: var(--main-color);
   margin-bottom: 48px;
 }
 
