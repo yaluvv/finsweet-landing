@@ -3,6 +3,10 @@ const lines = document.querySelectorAll('.reviews__slider-line')
 const btnLeft = document.getElementById('slider-btn-left')
 const btnRight = document.getElementById('slider-btn-right')
 const accItems = document.querySelectorAll('.que__acc-item')
+const nav = document.querySelector('.header__nav')
+const menuBtn = document.querySelector('.menu__btn')
+const navLinks = document.querySelectorAll('.header__nav-link')
+
 
 let index = 0
 
@@ -69,6 +73,15 @@ for (item of accItems) {
         }
     })
 }
+menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('header__nav--active')
+    menuBtn.classList.toggle('menu__btn--active')
+})
+
+navLinks.forEach(n => n.addEventListener('click', () => {
+    nav.classList.remove('header__nav--active')
+    menuBtn.classList.remove('menu__btn--active')
+}))
 
 
 setInterval(nextSlide, 5000)

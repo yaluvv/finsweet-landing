@@ -60,6 +60,23 @@
   .find__right-content {
     margin-right: 0;
   }
+  .menu__btn {
+    display: block;
+  }
+  .header__sub-info {
+    display: none;
+  }
+  .header__top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+    background: white;
+    padding: 15px;
+    box-shadow: black;
+    box-shadow: 0 4px 2px -2px grey;
+  }
 }
 
 @media (max-width: 1050px) {
