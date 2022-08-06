@@ -10,10 +10,10 @@ const menuClose = document.querySelector('.menu__btn-close')
 const navLinks = document.querySelectorAll('.header__nav-link')
 const headerBtn = document.getElementById('btn-popup-header')
 const popup = document.querySelector('.popup')
-const popupBtnClose = document.getElementById('popup-close')
-const videoBtnPopup = document.getElementById('video-popup')
+const popupBtnClose = document.querySelector('.popup__close')
+const videoBtnPopup = document.querySelector('.header__play-btn')
 const videoPopup = document.querySelector('.header__popup-video')
-const videoBtnClose = document.getElementById('video-btn-close')
+const videoBtnClose = document.querySelector('.header__popup-video-close')
 const video = document.querySelector('video')
 
 let index = 0

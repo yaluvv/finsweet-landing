@@ -65,14 +65,12 @@
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="42px" height="42px" viewBox="0 0 42 42" version="1.1">
-                                    <g id="surface1">
-                                        <path
-                                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
-                                            d="M 7 7 L 25 25 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
-                                        <path
-                                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
-                                            d="M 7 25 L 25 7 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
-                                    </g>
+                                    <path
+                                        style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                                        d="M 7 7 L 25 25 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
+                                    <path
+                                        style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                                        d="M 7 25 L 25 7 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
                                 </svg>
 
                             </span>
@@ -94,7 +92,7 @@
                             at one place</h1>
                         <div class="header__block-buttons">
                             <button id="btn-popup-header" class="header__service-btn btn">Book a service</button>
-                            <button id="video-popup" class="header__play-btn">Play video</button>
+                            <button type="button" class="header__play-btn">Play video</button>
                         </div>
                         <div class="header__bottom-info sub-info">
                             <div class="header__time-img">
@@ -132,8 +130,8 @@
                                     <a href="./video/video.mp4">этой ссылке</a>.
                                 </p>
                             </video>
-                            <button id="video-btn-close" class="header__popup-video-close"><img
-                                    src="./icons/video/close-icon.svg" alt=""></button>
+                            <button type="button" class="header__popup-video-close">
+                                <img src="./icons/video/close-icon.svg" alt="close icon"></button>
                         </div>
                     </div>
                 </div>
@@ -794,9 +792,22 @@
                     </label>
                     <button class="popup__form-btn btn btn--dark" type="submit">Log in</button>
                 </form>
-                <button id="popup-close" class="popup__close"></button>
-                <a class="popup__signup-link" href="#" target="_blank" rel="noopener noreferrer">Don't you have an
-                    account yet?</a>
+                <button type="button" class="popup__close" aria-label="button close">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px"
+                            height="42px" viewBox="0 0 42 42" version="1.1">
+                            <path
+                                style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                                d="M 7 7 L 25 25 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
+                            <path
+                                style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                                d="M 7 25 L 25 7 " transform="matrix(1.3125,0,0,1.3125,0,0)" />
+
+                        </svg>
+
+                    </span>
+                </button>
+                <a class="popup__signup-link" href="#" target="_blank">Don't you have an account yet?</a>
             </div>
         </div>
     </div>
