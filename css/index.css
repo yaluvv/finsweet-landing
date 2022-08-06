@@ -476,7 +476,7 @@ body {
   height: 32px;
   background-color: transparent;
   right: 5px;
-  top: 5px;
+  top: -40px;
   border: none;
   z-index: 2001;
   transition: all 0.3s;
