@@ -12,6 +12,7 @@ const popupBtnClose = document.getElementById('popup-close')
 const videoBtnPopup = document.getElementById('video-popup')
 const videoPopup = document.querySelector('.header__popup-video')
 const videoBtnClose = document.getElementById('video-btn-close')
+const video = document.querySelector('video')
 
 let index = 0
 
@@ -108,8 +109,10 @@ videoBtnPopup.addEventListener('click', () => {
 videoPopup.addEventListener('click', (e) => {
     if (e.target == videoPopup) {
         videoPopup.classList.remove('header__popup-video--active')
+        video.pause()
     }
 })
 videoBtnClose.addEventListener('click', () => {
     videoPopup.classList.remove('header__popup-video--active')
+    video.pause()
 })
