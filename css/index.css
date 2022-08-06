@@ -241,19 +241,25 @@ body {
 }
 
 .menu__btn {
-  display: none;
   position: relative;
   top: 0;
   right: 0;
   width: 42px;
   height: 42px;
-  background: url(../icons/header/menu-open.svg) no-repeat center;
   border: none;
   cursor: pointer;
   z-index: 1000;
+  background-color: transparent;
 }
-.menu__btn--active {
-  background: url(../icons/header/menu-close.svg) no-repeat center;
+
+.menu__btn span:last-child {
+  display: none;
+}
+.menu__btn.menu__btn--active > span {
+  display: none;
+}
+.menu__btn.menu__btn--active span:last-child {
+  display: block;
 }
 
 .popup {
