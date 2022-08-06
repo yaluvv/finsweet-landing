@@ -18,10 +18,10 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header id="header" class="header">
             <div class="container">
                 <div class="header__top">
-                    <a class="logo header__logo" href="#">
+                    <a class="logo header__logo" href="#header">
                         <img src="./img/header/logo.svg" alt="logotype">
                     </a>
                     <nav class="nav header__nav">
@@ -63,11 +63,8 @@
                         <h1 class="header__title section-title section-title--big ">Get your vehicle service done online
                             at one place</h1>
                         <div class="header__block-buttons">
-                            <button class="header__service-btn btn">Book a service</button>
-                            <button class="header__play-btn">
-                                <img src="./icons/header/play-icon.svg" alt="play video icon" class="header__play-icon">
-                                Play video
-                            </button>
+                            <button id="btn-popup-header" class="header__service-btn btn">Book a service</button>
+                            <button id="video-popup" class="header__play-btn">Play video</button>
                         </div>
                         <div class="header__bottom-info sub-info">
                             <div class="header__time-img">
@@ -95,10 +92,22 @@
                             <img src="./icons/header/stars-icon.svg" alt="rating stars" class="header__rating-icons">
                         </div>
                     </div>
+                    <div class="header__popup-video">
+                        <div class="header__popup-video-body">
+                            <video controls>
+                                <source src="./video/video.webm" type="video/webm">
+                                <source src="./video/video.mp4" type="video/mp4">
+                                <p>
+                                    Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его по
+                                    <a href="./video/video.mp4">этой ссылке</a>.
+                                </p>
+                            </video>
+                            <button id="video-btn-close" class="header__popup-video-close"><img
+                                    src="./icons/video/close-icon.svg" alt=""></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </header>
 
         <main class="main">
@@ -106,10 +115,10 @@
                 <div class="container">
                     <div class="services__info">
                         <p class="services__sub-title">What we Offer</p>
-                        <h2 class="services__title section-title">We offer full service auto repair & maintenance
+                        <h2 class="services__title section-title">We offer full service auto repair
+                            & maintenance
                         </h2>
                     </div>
-
                     <div class="services__items">
                         <div class="services__item">
                             <svg width="44" height="49" viewBox="0 0 44 49" fill="none"
@@ -275,17 +284,20 @@
                 <div class="container">
                     <div class="process__row">
                         <div class="process__info-block">
-                            <h2 class="process__title section-title">We follow a clear process to help you out.</h2>
-                            <p class="process__desc">Through True Rich Attended does no end it his mother since real had
+                            <h2 class="process__title section-title">We follow a clear process to
+                                help you out.</h2>
+                            <p class="process__desc">Through True Rich Attended does no end it his
+                                mother since real had
                                 half every him case in packages enquire</p>
-                            <button class="process__btn btn">Learn more</button>
+                            <a href="#que" class="process__btn btn">Learn more</a>
                         </div>
                         <div class="process__numbers-items">
                             <div class="process__numbers-item">
                                 <span class="process__item-number">01</span>
                                 <div class="process__item-info">
                                     <span class="process__item-title">Get a Quote</span>
-                                    <p class="process__item-text">Through True Rich Attended does no end it his mother
+                                    <p class="process__item-text">Through True Rich Attended does no
+                                        end it his mother
                                         since real had half every.</p>
                                 </div>
                             </div>
@@ -293,7 +305,8 @@
                                 <span class="process__item-number">02</span>
                                 <div class="process__item-info">
                                     <span class="process__item-title">Book an Appointment</span>
-                                    <p class="process__item-text">Through True Rich Attended does no end it his mother
+                                    <p class="process__item-text">Through True Rich Attended does no
+                                        end it his mother
                                         since real had half every.</p>
                                 </div>
                             </div>
@@ -301,7 +314,8 @@
                                 <span class="process__item-number">03</span>
                                 <div class="process__item-info">
                                     <span class="process__item-title">Get your Service Done</span>
-                                    <p class="process__item-text">Through True Rich Attended does no end it his mother
+                                    <p class="process__item-text">Through True Rich Attended does no
+                                        end it his mother
                                         since real had half every.</p>
                                 </div>
                             </div>
@@ -312,7 +326,8 @@
             <section id="help" class="help">
                 <div class="container">
                     <div class="help__box">
-                        <h2 class="help__title section-title section-title--small section-title--light">Get in touch
+                        <h2 class="help__title section-title section-title--small section-title--light">
+                            Get in touch
                             with us for your service
                             related query</h2>
                         <a href="#contact" class="help__btn btn btn--dark">Contact Us</a>
@@ -377,9 +392,11 @@
                                             <span class="reviews__user-city">New york</span>
                                         </div>
                                     </div>
-                                    <p class="reviews__user-desc">I have got my car repaired at Finsweet many times
+                                    <p class="reviews__user-desc">I have got my car repaired at
+                                        Finsweet many times
                                         before,
-                                        they are good at what they do. Not only did they repair my car in a short
+                                        they are good at what they do. Not only did they repair my
+                                        car in a short
                                         comprehensive look on all the working</p>
                                 </div>
                                 <div class="reviews__slider-item">
@@ -390,9 +407,11 @@
                                             <span class="reviews__user-city">New york</span>
                                         </div>
                                     </div>
-                                    <p class="reviews__user-desc">I have got my car repaired at Finsweet many times
+                                    <p class="reviews__user-desc">I have got my car repaired at
+                                        Finsweet many times
                                         before,
-                                        they are good at what they do. Not only did they repair my car in a short
+                                        they are good at what they do. Not only did they repair my
+                                        car in a short
                                         comprehensive look on all the working</p>
                                 </div>
                             </div>
@@ -405,9 +424,11 @@
                                             <span class="reviews__user-city">Arizona</span>
                                         </div>
                                     </div>
-                                    <p class="reviews__user-desc">I have got my car repaired at Finsweet many times
+                                    <p class="reviews__user-desc">I have got my car repaired at
+                                        Finsweet many times
                                         before,
-                                        they are good at what they do. Not only did they repair my car in a short
+                                        they are good at what they do. Not only did they repair my
+                                        car in a short
                                         comprehensive look on all the working</p>
                                 </div>
                                 <div class="reviews__slider-item">
@@ -418,9 +439,11 @@
                                             <span class="reviews__user-city">Denwer</span>
                                         </div>
                                     </div>
-                                    <p class="reviews__user-desc">I have got my car repaired at Finsweet many times
+                                    <p class="reviews__user-desc">I have got my car repaired at
+                                        Finsweet many times
                                         before,
-                                        they are good at what they do. Not only did they repair my car in a short
+                                        they are good at what they do. Not only did they repair my
+                                        car in a short
                                         comprehensive look on all the working</p>
                                 </div>
 
@@ -440,11 +463,6 @@
                                         class="reviews__slider-btn-img">
                                 </button>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -466,85 +484,102 @@
                         </ul>
                     </div>
                     <div class="blog__posts">
-                        <div class="blog__post">
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-                        <div class="blog__post">
+                        </article>
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-                        <div class="blog__post">
+                        </article>
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-                        <div class="blog__post">
+                        </article>
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-                        <div class="blog__post">
+                        </article>
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-                        <div class="blog__post">
+                        </article>
+                        <article class="blog__post">
                             <img src="./img/blog/post-img.jpg" alt="blog image" class="blog__img">
                             <div class="blog__post-content">
                                 <span class="blog__post-date">Posted on October 6th 2021</span>
-                                <h3 class="blog__post-title">5 Genius Car Accessories You Should Never Drive Without
+                                <h3 class="blog__post-title">5 Genius Car Accessories You Should
+                                    Never Drive Without
                                 </h3>
-                                <p class="blog__post-text">We provide a full range of front end mechanical repairs
+                                <p class="blog__post-text">We provide a full range of front end
+                                    mechanical repairs
                                     for
-                                    all makes and models We provide a full range of front end mechanical repairs for
+                                    all makes and models We provide a full range of front end
+                                    mechanical repairs for
                                     all
                                     makes and models</p>
                             </div>
-                        </div>
-
+                        </article>
                     </div>
                 </div>
             </section>
@@ -554,43 +589,52 @@
                     <div class="que__acc-items">
                         <div class="que__acc-item">
                             <div class="que__acc-item-head">
-                                <h3 class="que__acc-item-title">How long should a car repair take?</h3>
+                                <h3 class="que__acc-item-title">How long should a car repair take?
+                                </h3>
                                 <span class="que__acc-item-btn">
                                 </span>
 
                             </div>
-                            <p class="que__acc-item-text">I have got my car repaired at Finsweet many times before,
+                            <p class="que__acc-item-text">I have got my car repaired at Finsweet
+                                many times before,
                                 they
                                 are
-                                good at what they do. Not only did they repair my car I have got my car repaired at
+                                good at what they do. Not only did they repair my car I have got my
+                                car repaired at
                                 Finsweet
                                 I have got my car repaired at Finsweet</p>
                         </div>
                         <div class="que__acc-item">
                             <div class="que__acc-item-head">
-                                <h3 class="que__acc-item-title">How long should a car repair take?</h3>
+                                <h3 class="que__acc-item-title">How long should a car repair take?
+                                </h3>
                                 <span class="que__acc-item-btn">
                                 </span>
 
                             </div>
-                            <p class="que__acc-item-text">I have got my car repaired at Finsweet many times before,
+                            <p class="que__acc-item-text">I have got my car repaired at Finsweet
+                                many times before,
                                 they
                                 are
-                                good at what they do. Not only did they repair my car I have got my car repaired at
+                                good at what they do. Not only did they repair my car I have got my
+                                car repaired at
                                 Finsweet
                                 I have got my car repaired at Finsweet</p>
                         </div>
                         <div class="que__acc-item">
                             <div class="que__acc-item-head">
-                                <h3 class="que__acc-item-title">What are the repair services provided?</h3>
+                                <h3 class="que__acc-item-title">What are the repair services
+                                    provided?</h3>
                                 <span class="que__acc-item-btn">
                                 </span>
 
                             </div>
-                            <p class="que__acc-item-text">I have got my car repaired at Finsweet many times before,
+                            <p class="que__acc-item-text">I have got my car repaired at Finsweet
+                                many times before,
                                 they
                                 are
-                                good at what they do. Not only did they repair my car I have got my car repaired at
+                                good at what they do. Not only did they repair my car I have got my
+                                car repaired at
                                 Finsweet
                                 I have got my car repaired at Finsweet</p>
                         </div>
@@ -599,7 +643,8 @@
             </section>
             <section id="contact" class="contact">
                 <div class="container">
-                    <h2 class="contact__title section-title section-title--big">Get in touch with our experts</h2>
+                    <h2 class="contact__title section-title section-title--big">Get in touch with
+                        our experts</h2>
                     <div class="contact__row">
                         <form class="contact-form contact__content-form">
                             <input class="contact-form__input" type="text" name="text" id="text"
@@ -613,7 +658,8 @@
                             </select>
                             <textarea class="contact-from__message-area" name="message" id="message" cols="2" rows="2"
                                 placeholder="Message" required></textarea>
-                            <button type="submit" class="contact-form__btn btn">Send message</button>
+                            <button type="submit" class="contact-form__btn btn">Send
+                                message</button>
                         </form>
                         <div class="contact__content contact-us">
                             <div class="contact__content-box contact-us__content-box">
@@ -656,7 +702,8 @@
                 <div class="container">
                     <div class="find__row">
                         <div class="find__left-content">
-                            <h2 class="find__title section-title section-title--light section-title--small">Get in touch
+                            <h2 class="find__title section-title section-title--light section-title--small">
+                                Get in touch
                                 with us for your
                                 service</h2>
                             <div class="find__social-icons social-icons">
@@ -686,13 +733,15 @@
                                 <span class="find__sub-text">
                                     Address
                                 </span>
-                                <address class="find__main-text">NH 234 Public Square San Francisco 65368</address>
+                                <address class="find__main-text">NH 234 Public Square San Francisco
+                                    65368</address>
                             </div>
                             <div class="find__content-box">
                                 <span class="find__sub-text">
                                     We are open
                                 </span>
-                                <p class="find__main-text">Monday to Friday 9:00 AM to  10:00  AM</p>
+                                <p class="find__main-text">Monday to Friday 9:00 AM to  10:00  AM
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -703,7 +752,7 @@
         <footer id="footer" class="footer">
             <div class="container">
                 <div class="footer__row">
-                    <a class="logo footer__logo" href="#">
+                    <a class="logo footer__logo" href="#header">
                         <img src="./img/footer/logo.svg" alt="logo">
                     </a>
                     <nav class="nav footer__nav">
@@ -721,7 +770,8 @@
                                 <a href="#blog" class="nav__link footer__nav-link">Blog</a>
                             </li>
                             <li class="nav__item footer__nav-item">
-                                <a href="#contact" class="nav__link footer__nav-link">Contact us</a>
+                                <a href="#contact" class="nav__link footer__nav-link">Contact
+                                    us</a>
                             </li>
                         </ul>
                     </nav>
@@ -730,6 +780,25 @@
 
             </div>
         </footer>
+
+        <div class="popup">
+            <div class="popup__body">
+                <form class="popup__form">
+                    <label>
+                        <input class="popup__form-input" type="email" name="email" id="email"
+                            placeholder="Enter your email">
+                    </label>
+                    <label>
+                        <input class="popup__form-input" type="password" name="password" id="password"
+                            placeholder="Enter your password">
+                    </label>
+                    <button class="popup__form-btn btn btn--dark" type="submit">Log in</button>
+                </form>
+                <button id="popup-close" class="popup__close"></button>
+                <a class="popup__signup-link" href="#" target="_blank" rel="noopener noreferrer">Don't you have an
+                    account yet?</a>
+            </div>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>

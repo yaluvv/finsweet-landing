@@ -6,7 +6,12 @@ const accItems = document.querySelectorAll('.que__acc-item')
 const nav = document.querySelector('.header__nav')
 const menuBtn = document.querySelector('.menu__btn')
 const navLinks = document.querySelectorAll('.header__nav-link')
-
+const headerBtn = document.getElementById('btn-popup-header')
+const popup = document.querySelector('.popup')
+const popupBtnClose = document.getElementById('popup-close')
+const videoBtnPopup = document.getElementById('video-popup')
+const videoPopup = document.querySelector('.header__popup-video')
+const videoBtnClose = document.getElementById('video-btn-close')
 
 let index = 0
 
@@ -83,5 +88,28 @@ navLinks.forEach(n => n.addEventListener('click', () => {
     menuBtn.classList.remove('menu__btn--active')
 }))
 
+headerBtn.addEventListener('click', () => {
+    popup.classList.toggle('popup--active')
+})
 
-setInterval(nextSlide, 5000)
+popupBtnClose.addEventListener('click', () => {
+    popup.classList.remove('popup--active')
+})
+
+popup.addEventListener('click', (e) => {
+    if (e.target == popup) {
+        popup.classList.remove('popup--active')
+    }
+})
+
+videoBtnPopup.addEventListener('click', () => {
+    videoPopup.classList.toggle('header__popup-video--active')
+})
+videoPopup.addEventListener('click', (e) => {
+    if (e.target == videoPopup) {
+        videoPopup.classList.remove('header__popup-video--active')
+    }
+})
+videoBtnClose.addEventListener('click', () => {
+    videoPopup.classList.remove('header__popup-video--active')
+})
