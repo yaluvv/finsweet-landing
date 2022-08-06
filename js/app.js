@@ -4,7 +4,9 @@ const btnLeft = document.getElementById('slider-btn-left')
 const btnRight = document.getElementById('slider-btn-right')
 const accItems = document.querySelectorAll('.que__acc-item')
 const nav = document.querySelector('.header__nav')
-const menuBtn = document.querySelector('.menu__btn')
+const menu = document.querySelector('.menu')
+const menuOpen = document.querySelector('.menu__btn-open')
+const menuClose = document.querySelector('.menu__btn-close')
 const navLinks = document.querySelectorAll('.header__nav-link')
 const headerBtn = document.getElementById('btn-popup-header')
 const popup = document.querySelector('.popup')
@@ -79,9 +81,13 @@ for (item of accItems) {
         }
     })
 }
-menuBtn.addEventListener('click', () => {
+menuOpen.addEventListener('click', () => {
     nav.classList.toggle('header__nav--active')
-    menuBtn.classList.toggle('menu__btn--active')
+    menu.classList.toggle('menu--active')
+})
+menuClose.addEventListener('click', () => {
+    nav.classList.toggle('header__nav--active')
+    menu.classList.toggle('menu--active')
 })
 
 navLinks.forEach(n => n.addEventListener('click', () => {

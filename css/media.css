@@ -60,7 +60,7 @@
   .find__right-content {
     margin-right: 0;
   }
-  .menu__btn {
+  .menu .menu__btn-open {
     display: block;
   }
   .header__sub-info {

@@ -240,7 +240,9 @@ body {
   align-self: flex-start;
 }
 
-.menu__btn {
+.menu .menu__btn-open,
+.menu__btn-close {
+  display: none;
   position: relative;
   top: 0;
   right: 0;
@@ -251,14 +253,10 @@ body {
   z-index: 1000;
   background-color: transparent;
 }
-
-.menu__btn span:last-child {
+.menu.menu--active .menu__btn-open {
   display: none;
 }
-.menu__btn.menu__btn--active > span {
-  display: none;
-}
-.menu__btn.menu__btn--active span:last-child {
+.menu.menu--active .menu__btn-close {
   display: block;
 }
 
