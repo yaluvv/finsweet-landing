@@ -92,7 +92,7 @@ menuClose.addEventListener('click', () => {
 
 navLinks.forEach(n => n.addEventListener('click', () => {
     nav.classList.remove('header__nav--active')
-    menuBtn.classList.remove('menu__btn--active')
+    menu.classList.remove('menu--active')
 }))
 
 headerBtn.addEventListener('click', () => {
