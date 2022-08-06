@@ -260,6 +260,9 @@ body {
   display: block;
 }
 @keyframes animPopup {
+  from {
+    top: 0%;
+  }
   100% {
     top: 50%;
   }
