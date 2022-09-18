@@ -353,6 +353,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.header__logo > img {
+  width: 122px;
+  height: 28px;
+}
 .header__nav {
   margin-left: auto;
   margin-right: 64px;
@@ -403,6 +407,10 @@ body {
 }
 .header__tel-img {
   margin-right: 14px;
+}
+.header__tel-img > img {
+  width: 40px;
+  height: 40px;
 }
 .header__tel-info-text {
   opacity: 0.7;
@@ -455,11 +463,19 @@ body {
 .header__time-img {
   margin-right: 13px;
 }
+.header__time-img > img {
+  width: 31px;
+  height: 31px;
+}
 .header__bottom-info-text {
   color: var(--gray-color);
 }
 .header__img-block {
   position: relative;
+}
+.header__img-block > img {
+  width: 605px;
+  height: 632px;
 }
 .header__popup-video {
   display: none;
@@ -536,6 +552,10 @@ body {
 }
 .header__rating-block {
   margin-right: 15px;
+}
+.header__rating-icons {
+  width: 185px;
+  height: 36px;
 }
 .header__rating-text {
   font-size: 24px;
@@ -632,6 +652,8 @@ body {
 }
 .services__arrow-icon {
   position: relative;
+  width: 53px;
+  height: 16px;
 }
 .services__arrow-learn:hover {
   opacity: 0.6;
@@ -788,6 +810,8 @@ body {
   margin-right: 10px;
 }
 .brands__img {
+  width: 230px;
+  height: 130px;
   transition: all 0.3s;
 }
 .brands__img:hover {
@@ -810,6 +834,10 @@ body {
   gap: 32px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
+}
+.blog__img {
+  width: 405px;
+  height: 266px;
 }
 .blog__title {
   text-align: left;
@@ -895,6 +923,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+}
+.reviews__user-img {
+  width: 64px;
+  height: 64px;
 }
 .reviews__user-name {
   font-size: 24px;
@@ -1066,9 +1098,13 @@ body {
 }
 
 .contact__map {
-  position: relative;
+  width: 805px;
+  height: 425px;
   max-width: 100%;
+  position: relative;
   top: 178px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 4;
 }
 .contact__content-form {
@@ -1091,7 +1127,7 @@ body {
 /* street section start */
 .street {
   height: 448px;
-  background-image: url(../img/street/bg.jpg);
+  background-image: url(../img/street/bg.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1102,7 +1138,7 @@ body {
 
 .help {
   min-height: 502px;
-  background: url(../img/help/bg-img.jpg) no-repeat center / cover;
+  background: url(../img/help/bg-img.webp) no-repeat center / cover;
 }
 .help__inner {
   display: flex;
@@ -1191,4 +1227,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: var(--gray-color);
+}
+.footer__logo > img {
+  width: 121px;
+  height: 27px;
 }

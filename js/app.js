@@ -90,9 +90,10 @@ menuClose.addEventListener('click', () => {
     menu.classList.toggle('menu--active')
 })
 
-navLinks.forEach(n => n.addEventListener('click', () => {
+navLinks.forEach(n => n.addEventListener('click', (event) => {
     nav.classList.remove('header__nav--active')
     menu.classList.remove('menu--active')
+
 }))
 
 headerBtn.addEventListener('click', () => {
@@ -122,3 +123,5 @@ videoBtnClose.addEventListener('click', () => {
     videoPopup.classList.remove('header__popup-video--active')
     video.pause()
 })
+
+
